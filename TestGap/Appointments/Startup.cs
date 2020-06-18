@@ -1,15 +1,13 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using Appointments.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
-using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
+using System;
+using System.Threading.Tasks;
 
 namespace Appointments
 {
@@ -26,10 +24,21 @@ namespace Appointments
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+
+            services.AddDbContext<AppointmentDbContext>(options =>
+                options.UseSqlServer(Configuration.GetConnectionString("AppointmentContext")));
+
+            services.AddIdentity<User, IdentityRole>(options =>
+                {
+                    options.Password.RequiredLength = 8;
+                    options.Password.RequiredUniqueChars = 2;
+                })
+                .AddEntityFrameworkStores<AppointmentDbContext>()
+                .AddDefaultTokenProviders();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, IServiceProvider serviceProvider)
         {
             if (env.IsDevelopment())
             {
@@ -46,6 +55,39 @@ namespace Appointments
             {
                 endpoints.MapControllers();
             });
+
+            using (var context = serviceProvider.GetService<AppointmentDbContext>())
+            {
+                if (context.Database.CanConnect())
+                {
+                    //
+                    context.Database.Migrate();
+
+                    //
+                    SeedUserData(serviceProvider, context).Wait();
+                }
+            }
+        }
+
+        private async Task SeedUserData(IServiceProvider serviceProvider, AppointmentDbContext context)
+        {
+            var userManager = serviceProvider.GetService<UserManager<User>>();
+
+            var superAdminEmail = Configuration.GetValue<string>("Admin:Email");
+            var user = await userManager.FindByEmailAsync(superAdminEmail);
+
+            if (user == null)
+            {
+                user = new User
+                {
+                    UserName = superAdminEmail,
+                    Email = superAdminEmail,
+                    EmailConfirmed = true
+                };
+
+                string superAdminPassword = Configuration.GetValue<string>("Admin:Password");
+                await userManager.CreateAsync(user, superAdminPassword);
+            }
         }
     }
 }

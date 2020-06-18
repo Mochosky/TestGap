@@ -47,8 +47,14 @@ E:\Projects\Technical Assessment\Gap\TestGap\Appointments\bin\Debug\netcoreapp3.
 E:\Projects\Technical Assessment\Gap\TestGap\Appointments\bin\Debug\netcoreapp3.1\Appointments.dll
 E:\Projects\Technical Assessment\Gap\TestGap\Appointments\bin\Debug\netcoreapp3.1\Appointments.pdb
 E:\Projects\Technical Assessment\Gap\TestGap\Appointments\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.InMemory.dll
-E:\Projects\Technical Assessment\Gap\TestGap\Appointments\obj\Debug\netcoreapp3.1\Appointments.csproj.CoreCompileInputs.cache
-E:\Projects\Technical Assessment\Gap\TestGap\Appointments\obj\Debug\netcoreapp3.1\Appointments.MvcApplicationPartsAssemblyInfo.cache
 E:\Projects\Technical Assessment\Gap\TestGap\Appointments\obj\Debug\netcoreapp3.1\Appointments.dll
 E:\Projects\Technical Assessment\Gap\TestGap\Appointments\obj\Debug\netcoreapp3.1\Appointments.pdb
 E:\Projects\Technical Assessment\Gap\TestGap\Appointments\obj\Debug\netcoreapp3.1\Appointments.genruntimeconfig.cache
+E:\Projects\Technical Assessment\Gap\TestGap\Appointments\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.Internal.dll
+E:\Projects\Technical Assessment\Gap\TestGap\Appointments\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+E:\Projects\Technical Assessment\Gap\TestGap\Appointments\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+E:\Projects\Technical Assessment\Gap\TestGap\Appointments\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Core.dll
+E:\Projects\Technical Assessment\Gap\TestGap\Appointments\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Stores.dll
+E:\Projects\Technical Assessment\Gap\TestGap\Appointments\obj\Debug\netcoreapp3.1\Appointments.csproj.CoreCompileInputs.cache
+E:\Projects\Technical Assessment\Gap\TestGap\Appointments\obj\Debug\netcoreapp3.1\Appointments.MvcApplicationPartsAssemblyInfo.cache
+E:\Projects\Technical Assessment\Gap\TestGap\Appointments\obj\Debug\netcoreapp3.1\Appointments.csprojAssemblyReference.cache

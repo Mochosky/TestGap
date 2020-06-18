@@ -1,17 +1,15 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using System.ComponentModel.DataAnnotations;
 
 namespace Appointments.Models
 {
-    public class Appointment
+    public class Appointment : BaseEntity
     {
+        [Key]
         public int AppointmentId { get; set; }
-        public int AppointmentTypeId { get; set; }
+        public Guid AppointmentTypeId { get; set; }
         public int PatientId { get; set; }
         public DateTime Date { get; set; }
-        public DateTime Created { get; set; }
-        public DateTime Modified { get; set; }
+        public bool IsActive { get; set; }
     }
 }
