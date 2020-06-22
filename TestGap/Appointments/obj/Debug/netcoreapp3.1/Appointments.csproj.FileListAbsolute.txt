@@ -55,6 +55,7 @@ E:\Projects\Technical Assessment\Gap\TestGap\Appointments\bin\Debug\netcoreapp3.
 E:\Projects\Technical Assessment\Gap\TestGap\Appointments\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 E:\Projects\Technical Assessment\Gap\TestGap\Appointments\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Core.dll
 E:\Projects\Technical Assessment\Gap\TestGap\Appointments\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Stores.dll
+E:\Projects\Technical Assessment\Gap\TestGap\Appointments\obj\Debug\netcoreapp3.1\Appointments.csprojAssemblyReference.cache
+E:\Projects\Technical Assessment\Gap\TestGap\Appointments\bin\Debug\netcoreapp3.1\AutoMapper.dll
 E:\Projects\Technical Assessment\Gap\TestGap\Appointments\obj\Debug\netcoreapp3.1\Appointments.csproj.CoreCompileInputs.cache
 E:\Projects\Technical Assessment\Gap\TestGap\Appointments\obj\Debug\netcoreapp3.1\Appointments.MvcApplicationPartsAssemblyInfo.cache
-E:\Projects\Technical Assessment\Gap\TestGap\Appointments\obj\Debug\netcoreapp3.1\Appointments.csprojAssemblyReference.cache

@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "ZYXxee04iZwQoZfhNaBSs5VNkHOqg5YGGXEDXwAkR4Hk/gAmGdKNknmoe621sLSwJZWJX02G5GRoQr86Gw4zBA==",
+  "dgSpecHash": "dw9HkaOW3vRIAepOZVyaeavleZmwTXrKYFBxFDqv9yGyg9yzlFASu3UOjEbcFsQL/BtyiAfGp+5jgAC4YtK4yQ==",
   "success": true,
   "projectFilePath": "E:\\Projects\\Technical Assessment\\Gap\\TestGap\\Appointments\\Appointments.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Jaime\\.nuget\\packages\\automapper\\9.0.0\\automapper.9.0.0.nupkg.sha512",
     "C:\\Users\\Jaime\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\3.1.5\\microsoft.aspnetcore.cryptography.internal.3.1.5.nupkg.sha512",
     "C:\\Users\\Jaime\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\3.1.5\\microsoft.aspnetcore.cryptography.keyderivation.3.1.5.nupkg.sha512",
     "C:\\Users\\Jaime\\.nuget\\packages\\microsoft.aspnetcore.identity.entityframeworkcore\\3.1.5\\microsoft.aspnetcore.identity.entityframeworkcore.3.1.5.nupkg.sha512",
